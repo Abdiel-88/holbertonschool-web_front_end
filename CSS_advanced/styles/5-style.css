@@ -1,6 +1,5 @@
 /* styles/5-style.css */
 :root {
-    /* Existing custom properties */
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
@@ -9,8 +8,6 @@
     --text-color: var(--color-black);
     --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  
-    /* New font size custom properties */
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
@@ -19,7 +16,6 @@
   }
   
   html {
-    /* Set base font size to 62.5% */
     font-size: 62.5%;
   }
   
