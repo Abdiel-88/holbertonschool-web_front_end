@@ -1,0 +1,29 @@
+:root {
+    /* Define custom properties (variables) */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+  }
+  
+  body {
+    /* Use the text-color variable for the body's text color */
+    color: var(--text-color);
+  }
+  
+  a {
+    /* Use the text-color variable for anchor elements' text color */
+    color: var(--text-color);
+  }
+  
+  .visually-hidden {
+    display: none;
+  }
+  
+  .card-category, .section-tagline {
+    /* Use the color-primary variable for these classes' text color */
+    color: var(--color-primary);
+  }
+  
