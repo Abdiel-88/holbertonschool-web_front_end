@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
-/* Universal box-sizing for all elements */
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -39,11 +38,10 @@
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.04rem; /* 4% of the root element */
+    --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 3rem 0; /* Correctly setting as per requirement */
-    --nav-item-link-hover: var(--color-primary)
-    
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
   }
   
   html {
@@ -67,6 +65,14 @@
   a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: var(--text-color);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    background-color: var(--color-light-grey);
   }
   
   .visually-hidden {
@@ -96,7 +102,6 @@
     font-weight: var(--font-weight-bold);
   }
   
-  /* New padding styles */
   .section {
     padding: var(--section-padding);
   }
@@ -114,14 +119,7 @@
     padding: var(--footer-padding);
   }
   
-  /* Container and other styles from styles/16-style.css */
-  .container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Customizing the navbar-menu */
+  /* Customization for the Navbar */
   .navbar-menu {
     float: right;
   }
@@ -139,14 +137,20 @@
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
     display: var(--nav-item-display);
-    margin: var(--nav-item-margin); /* Corrected margin */
+    margin: var(--nav-item-margin);
   }
   
   .nav-link {
     display: block;
-    padding: 0.5rem 1rem; /* Half of the root element for top and bottom, equal to the root element for left and right */
+    padding: calc(1rem / 2) 1rem;
   }
   
   .nav-link:hover {
     color: var(--nav-item-link-hover);
+  }
+  
+  .container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
