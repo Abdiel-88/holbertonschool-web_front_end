@@ -70,19 +70,18 @@ h1, h2, h3, h4, h5, h6 {
   text-align: var(--section-header-align);
 }
 
-/* Styling anchor elements based on their state */
-a:link {
-  text-decoration: none; /* Targets links that have not been visited */
-}
-
-a:visited {
-  font-style: italic; /* Styles for links that have been visited */
-}
-
-a:hover {
-  text-decoration: underline; /* Adds an underline when hovering over links */
-}
-
-a:active {
-  background-color: var(--color-light-grey); /* Changes background color when link is being clicked */
-}
+a[href]:link {
+    text-decoration: none;
+  }
+  
+  a[href]:visited {
+    font-style: italic;
+  }
+  
+  a[href]:hover {
+    text-decoration: underline;
+  }
+  
+  a[href]:active {
+    background-color: var(--color-light-grey);
+  }
