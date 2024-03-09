@@ -39,10 +39,10 @@
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.04rem; /* Assuming 4% of the root element is similar */
+    --nav-item-letter-spacing: 0.04rem; /* 4% of the root element */
     --nav-item-display: inline-block;
-    --nav-item-margin: 3rem 0 0 0; /* 3 times the root element on the bottom and 0 elsewhere */
-    --nav-item-link-hover: var(--color-primary);
+    --nav-item-margin: 0 0 3rem 0; /* Correctly setting as per requirement */
+    --nav-item-link-hover: var(--color-primary)
     
   }
   
@@ -122,35 +122,31 @@
   }
 
   /* Customizing the navbar-menu */
-.navbar-menu {
+  .navbar-menu {
     float: right;
   }
   
-  /* Styling for the nav class */
   .nav {
     margin: 0;
     padding: 0;
-    list-style: none; /* The styling on the list should not use anything */
+    list-style: none;
     text-align: center;
   }
   
-  /* Styling for the nav-item class within the nav class */
-  .nav .nav-item {
+  .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
     display: var(--nav-item-display);
-    margin: var(--nav-item-margin);
+    margin: var(--nav-item-margin); /* Corrected margin */
   }
   
-  /* Styling for the nav-link class within the nav class */
-  .nav .nav-link {
+  .nav-link {
     display: block;
-    padding: 0.5rem 1rem; /* Half of the root element for top and bottom, and equal to the root element for left and right */
+    padding: 0.5rem 1rem; /* Half of the root element for top and bottom, equal to the root element for left and right */
   }
   
-  /* Hover effect for the nav-link class within the nav class */
-  .nav .nav-link:hover {
+  .nav-link:hover {
     color: var(--nav-item-link-hover);
   }
